@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #f1f1f1;
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+/* first page start here  */
+.quizapp {
+  width: 320px;
+  height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.406),
+    -3px -3px 5px rgba(128, 128, 128, 0.406);
+  border-radius: 30px;
+}
+.quizapp .first-page {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.image img {
+  width: 100%;
+}
+.text {
+  padding: 10px;
+}
+.text h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.btn {
+  position: relative;
+  margin-top: 40px;
+}
+.btn button {
+  position: absolute;
+  right: 0;
+  bottom: -21px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 30px 0px 30px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+.btn button:hover {
+  background-color: teal;
+}
+/* first page end here  */
+
+/* rulls section start here  */
+.rullbox {
+  width: 320px;
+  height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.406),
+    -3px -3px 5px rgba(128, 128, 128, 0.406);
+  border-radius: 30px;
+  display: none;
+}
+.rullbox .activepage {
+  display: block;
+}
+.rullbox h3 {
+  text-align: center;
+  padding: 10px;
+}
+.rullbox hr {
+  border-bottom: none;
+  border-color: gray;
+}
+.rullbox .rulls {
+  width: 100%;
+  padding: 10px;
+}
+.rullbox ol {
+  list-style-position: inside;
+}
+.rulls ol li {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: -93px;
+}
+#exitbtn {
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: none;
+  border-radius: 0px 30px 0px 30px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+#continuebtn {
+  position: absolute;
+  right: 0;
+  bottom: -21px;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px 0px 30px 0px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+#continuebtn:hover {
+  background-color: teal;
+}
+#exitbtn:hover {
+  background-color: red;
+}
+/* rulls section end here  */
+
+/* question section start here  */
+.question {
+  width: 320px;
+  height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.406),
+    -3px -3px 5px rgba(128, 128, 128, 0.406);
+  border-radius: 30px;
+  display: none;
+}
+.question hr {
+  border-bottom: none;
+  color: rgb(233, 226, 226);
+  margin-top: 30px;
+}
+.heading {
+  display: flex;
+  justify-content: start;
+  padding: 10px 10px;
+  position: relative;
+}
+.heading .exam {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.timecount {
+  background-color: #86b8de;
+  padding: 3px 10px;
+  position: absolute;
+  right: 10px;
+  border-radius: 4px;
+}
+.timecount .time {
+  background-color: #86b8de;
+}
+.timecount .sec {
+  background-color: grey;
+  padding: 3px;
+  margin-left: 10px;
+  color: white;
+}
+.main-question {
+  margin-top: 40px;
+  padding: 5px 20px;
+}
+.main-question .question-answar {
+  padding: 4px 10px;
+  margin-top: 30px;
+}
+.main-question .question-answar span {
+  display: flex;
+  margin-top: 30px;
+  background-color: #f0f8fe;
+  height: 50px;
+  text-align: justify;
+  align-items: center;
+  padding-left: 10px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.main-question .question-answar span:hover {
+  background-color: #cce4fc;
+}
+.disable {
+  pointer-events: none;
+}
+.foterdiv {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.foterdiv span {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+.nxtbtn {
+  position: absolute;
+  margin-top: 40px;
+  right: 0;
+}
+.nxtbtn button {
+  position: absolute;
+  right: 0;
+  bottom: -33px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 30px 0px 30px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+.progress {
+  width: 0;
+  height: 3px;
+  background-color: blue;
+  position: absolute;
+  top: 62px;
+  left: 0;
+}
+.lastpage {
+  width: 320px;
+  height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.406),
+    -3px -3px 5px rgba(128, 128, 128, 0.406);
+  border-radius: 30px;
+  display: none;
+  text-align: center;
+}
+.buttonlastpage {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: -290px;
+}
+#playaginbtn {
+  position: absolute;
+  right: 0;
+  bottom: -21px;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px 0px 30px 0px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+#playaginbtn:hover {
+  background-color: teal;
+}
+#quitbtn {
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: none;
+  border-radius: 0px 30px 0px 30px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+#quitbtn:hover {
+  background-color: red;
+}
+.marks {
+  margin-top: 200px;
+}

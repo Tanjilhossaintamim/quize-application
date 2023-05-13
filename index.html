@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quize-App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Ysabeau&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- first page start here  -->
+    <div class="quizapp">
+      <div class="image">
+        <img src="./image/undraw_questions_re_1fy7.svg" alt="image" />
+      </div>
+      <div class="text">
+        <h3>Quiz App With Fixed Time</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati at
+          illum quod autem exercitationem dicta? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit.
+        </p>
+        <h3>Quiz App With Fixed Time</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati at
+          illum quod autem exercitationem dicta? Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="btn">
+        <button id="strtbtn">Start Quiz</button>
+      </div>
+    </div>
+    <!-- first page end here  -->
+
+    <!-- second page start here -->
+
+    <div class="rullbox">
+      <h3>Some Rules of this Quiz</h3>
+      <hr />
+      <div class="rulls">
+        <ol>
+          <li>
+            You will have only <span style="color: blue">15 seconds</span> per
+            each question.
+          </li>
+          <li>Once you select your answer, it can't be undone.</li>
+          <li>You can't select any option once time goes off.</li>
+          <li>You can't exit from the Quiz while you're playing.</li>
+          <li>You'll get points on the basis of your correct answers.</li>
+        </ol>
+      </div>
+      <div class="buttons">
+        <button id="exitbtn">Exit Quiz</button>
+        <button id="continuebtn">Continue</button>
+      </div>
+    </div>
+    <!-- second page end here -->
+
+    <div class="question">
+      <div class="heading">
+        <div class="exam">Start Exam</div>
+        <div class="timecount">
+          <span class="time">Time Left</span>
+          <span class="sec">15</span>
+        </div>
+        <div class="progress"></div>
+      </div>
+      <div class="main-question">
+        <div class="title">
+          <!-- <h3>1.What Does HTML Stand For?</h3> -->
+        </div>
+        <div class="question-answar"></div>
+      </div>
+      <hr />
+      <div class="foterdiv">
+        <div class="question-count"></div>
+        <div class="nxtbtn">
+          <button>Next</button>
+        </div>
+      </div>
+    </div>
+    <!-- second page end here -->
+    <!-- last page -->
+    <div class="lastpage">
+      <div class="marks">
+        
+       
+      </div>
+      <div class="buttonlastpage">
+        <button id="quitbtn">Quit</button>
+        <button id="playaginbtn">Play Again</button>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
